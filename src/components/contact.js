@@ -40,6 +40,7 @@ export default function Contact() {
                 <div className='a'>
                    <input className={isError? 'errorInput': ''} type="text" placeholder='Enter your email address' onChange={handleChange} value={inputValue}/>
                     <p className='errorText' style={{display: isError? 'block': 'none'}}>{errorMessage}</p> 
+                    <span style={{display: isError? 'block':'none'}} className='sign'>!</span>
                 </div>
                 
                 <button type='submit'>contact us</button>
