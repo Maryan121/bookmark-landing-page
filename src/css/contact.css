@@ -1,0 +1,112 @@
+.contactContainer{
+    background-color: hsl(231, 69%, 60%);
+    color: #fff;
+    text-align: center;
+}
+.contactMinCon{
+    padding: 3rem 2rem;
+}
+.contactMinCon p{
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+.contactMinCon h2{
+    font-weight: 400;
+}
+.contactMinCon form{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.3rem;
+    gap: .7rem;
+}
+.form .a{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.form input{
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: .3rem;
+    border: none;
+    color: hsl(229, 31%, 21%);    
+}
+input:hover,
+input:focus{
+    outline: none;
+}
+
+.form button{
+    padding: 1rem;
+    border: solid 2px hsl(0, 94%, 66%);
+    border-radius: .3rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    background-color: hsl(0, 94%, 66%);
+    color: #fff;
+
+    cursor: pointer;
+}
+.form button:hover,
+.form button:focus{
+
+    background-color: #fff;
+    color: hsl(0, 94%, 66%);
+    border: solid 2px hsl(0, 94%, 66%);
+}
+.form .a{
+    position: relative;;
+}
+.form .sign{
+    background-color: #FA5959;
+    position: absolute;
+    right: 6%;
+    top: 10%;
+    padding: .1rem .5rem;
+    border-radius: 100%;
+    font-size: 1rem;
+}
+
+.form .errorInput{
+    border: solid 1px #FA5959;
+    border-radius: .3rem .3rem 0 0;
+    
+}
+.errorText{
+    background-color: #FA5959;
+    font-size: .8rem;
+    padding: .8rem;
+    border-radius: 0 0 .3rem .3rem;
+    margin-top: -.1rem;
+}
+
+@media(min-width:600px){
+    .contactMinCon{
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width:900px){
+    .contactMinCon{
+        width: 50%;
+    }
+    .contactMinCon .form{
+        flex-direction: row;
+        gap: .4rem;
+    }
+    .form button{
+        width: 36%;
+        padding: .6rem;
+        height: fit-content;
+    }
+}
+
+@media(min-width:1000px){
+    .contactMinCon{
+        width: 40%;
+    }
+}

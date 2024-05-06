@@ -1,0 +1,174 @@
+:root{
+--Soft-Blue: hsl(231, 69%, 60%);
+--Soft-Red: hsl(0, 94%, 66%);
+
+--Grayish-Blue: hsl(229, 8%, 60%);
+--Very-Dark-Blue: hsl(229, 31%, 21%);
+}
+
+header{
+    position: relative;
+    padding: 1.5rem 1.6rem;
+
+}
+.logoSection{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.logoSection img{
+    width: 50%;
+}
+.closeIcon{
+    position: absolute;
+    right: 5.4%;
+    top: 4.5%;
+
+}
+.closeIcon:hover,
+.closeIcon:focus{
+    opacity: .8;
+}
+
+.menuIcon path{
+    cursor: pointer;
+}
+
+.menuIcon:hover,.menuIcon:focus{
+    opacity: .7;
+}
+
+.nav{
+    background-color: hsla(229, 31%, 21%, 0.931);
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+.nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 6.3rem;
+    width: 85%;
+}
+.firstListItem{
+    border-top: solid hsla(229, 8%, 60%, 0.522) 1px;
+
+}
+.nav ul li{
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.3rem;
+    width: 100%;
+    cursor: pointer;
+    border-bottom: solid hsla(229, 8%, 60%, 0.522) 1px;
+    padding: 1.5rem 0;
+}
+
+.nav ul li:hover, .nav ul li:focus{
+    opacity: .8;
+}
+.nav a{
+    text-decoration: none;
+    color: #fff;
+}
+.login{
+    border-bottom: none;
+    border: solid 2px hsl(229, 8%, 60%);
+    padding: 1rem 0;
+}
+.login:hover,.login:focus{
+    opacity: .8;
+}
+
+@media(max-width:768px){   
+    .show{
+        display: block;
+    }
+    .hide{
+        display: none;
+    }
+
+}
+
+@media(min-width:600px){
+    header{
+        margin-top: .7rem;
+    }
+}
+
+@media(min-width:769px){
+    header{
+        position: static;
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+        padding: 1.5rem 5rem;
+        justify-content: space-between;
+    }
+    .logoSection{
+        align-items: center;
+        display: block;
+    }
+    .logoSection img{
+        width: 100%;
+    }
+    #menuIcon,#closeIcon{
+        display: none;
+    }
+    .nav{
+        display: block;
+        position: static;
+        background: none;
+        align-items: center;
+        color: black;
+        height: fit-content;
+        width: fit-content;
+    } 
+    .nav ul{
+        margin: 0;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .nav ul .firstListItem{
+        border-top: none;
+    }
+    .nav ul li{
+        border-bottom: none;
+        padding: 0;
+        font-size: 15px;
+        font-weight: 400;
+        color: #242A45;
+    }
+    
+    .nav ul a:hover,
+    .nav ul a:focus{
+        color: #ea3636;
+    }
+    .nav a{
+        color: #242A45;
+    }
+    .nav ul .login{
+        padding: .5rem 1.7rem;
+        background-color: #FA5959;
+        color: #fff;
+        border-radius: .3rem;
+        border: solid #FA5959 2px;     
+    }
+    .nav ul .login:hover,
+    .nav ul .login:focus{
+        color: #ea3636;
+        border: solid 2px #FA5959;
+        font-weight: 400; 
+        background: none;
+    }
+
+}

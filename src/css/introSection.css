@@ -1,0 +1,104 @@
+.introContainer{
+    text-align: center;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    overflow-x: hidden;
+}
+.imageSec{
+    position: relative;
+    margin-bottom: 5rem;
+}
+.imageSec::after{
+    content: ' ';
+    display: inline-block;
+    background-color: #5267DF;
+    width: 95%;
+    position: absolute;
+    top: 20%;
+    right: -11%;
+    border-radius: 20% 0 0 30%;
+    height: 83%;
+    z-index: -1;
+
+}
+.introContainer img{
+    width: 100%;
+}
+.introContainer h2{
+    font-size: 2rem;
+    color: hsl(229, 31%, 21%);
+}
+.introContainer p{
+    color: #242a45c8;
+    line-height: 1.7rem;
+    font-weight: 400;
+}
+.btns{
+    margin-top: 2rem;
+}
+.btns button:first-child{
+    background-color: hsl(231, 69%, 60%);
+    color: #fff;
+    border: solid 2px #5267DF;
+    padding: .8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: .3rem;
+}
+.btns button:first-child:hover,
+.bts button:first-child:focus{
+    border: #5267DF solid 2px;
+    background: none;
+    color: #5267DF;
+}
+.btns button:last-child{
+    padding: .8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: hsl(229, 31%, 21%);
+    box-shadow: 0px 1px  1px hsla(231, 69%, 60%, 0.788);
+    border: solid 2px #fff;
+    margin-left: 1rem;
+    border-radius: .3rem;
+}
+.btns button:last-child:hover,
+.btns button:last-child:focus{
+    border: solid hsl(229, 31%, 21%) 2px;
+    box-shadow: none;
+    background: none;
+}
+
+@media(min-width:600px){
+    .introContainer{
+        margin: 5rem auto;
+        text-align: left;
+    }
+    .imageSec img{
+        width: 80%;
+    }
+    .imageSec::after{
+        width: 90%;
+    }
+    .introContainer .infoSec{
+        width: 80%;
+        margin: 1rem auto;
+    }
+}
+
+@media(min-width:900px){
+    .introContainer{
+        margin-top: 4rem;
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .introContainer .imageSec{
+        grid-area: 1/2/2/3;
+    }
+
+    .infoSec h2{
+        font-size: 3rem;
+    }
+}
